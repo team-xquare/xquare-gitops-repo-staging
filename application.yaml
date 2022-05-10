@@ -1,20 +1,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: xquare
+  name: xquare-stg
   namespace: argocd
 
 spec:
-  project: xquare
+  project: xquare-stg
 
   source:
-    repoURL: https://github.com/team-xquare/xquare-manifest-repository.git
+    repoURL: https://github.com/team-xquare/xquare-gitops-repo-staging.git
     targetRevision: HEAD
     path: apps
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: xquare
+    namespace: xquare-stg
 
   syncPolicy:
     automated:
