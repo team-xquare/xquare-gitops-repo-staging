@@ -4,4 +4,4 @@ container:
     registry: registry.hub.docker.com
     version: 0.1
 
-host: admin.xquare.app
+host: stg-admin.xquare.app

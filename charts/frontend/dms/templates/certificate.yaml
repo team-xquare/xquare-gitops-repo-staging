@@ -6,6 +6,6 @@ spec:
   dnsNames:
   - {{ .Values.host }}
   issuerRef:
-    name: letsencrypt-prod
+    name: letsencrypt-staging
     kind: ClusterIssuer
   secretName: {{ .Values.app }}-cert
