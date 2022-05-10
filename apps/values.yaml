@@ -1,0 +1,9 @@
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+
+  project: xquare-stg
+
+  source:
+    repoURL: https://github.com/team-xquare/xquare-gitops-repo-staging.git
+    targetRevision: HEAD
