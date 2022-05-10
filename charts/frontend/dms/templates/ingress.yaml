@@ -6,12 +6,13 @@ spec:
   virtualhost:
     fqdn: {{ .Values.host }}
     tls:
+      passthrough: true
       secretName: {{ .Values.app }}-cert
 
   routes:
   - conditions:
-      - prefix: /
-      
+    - prefix: /
+    permitInsecure: true    
     services:
       - name: {{.Values.app}}-svc
         port: 8080
