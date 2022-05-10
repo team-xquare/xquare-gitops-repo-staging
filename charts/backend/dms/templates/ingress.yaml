@@ -13,7 +13,6 @@ spec:
   routes:
   - conditions:
     - prefix: /
-    permitInsecure: true  
     services:
       - name: {{.Values.app}}-svc
         port: 8080
