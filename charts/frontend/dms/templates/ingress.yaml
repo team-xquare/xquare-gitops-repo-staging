@@ -6,7 +6,6 @@ spec:
   virtualhost:
     fqdn: {{ .Values.host }}
     tls:
-      passthrough: true
       secretName: {{ .Values.app }}-cert
 
   routes:
