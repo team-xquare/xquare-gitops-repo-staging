@@ -2,6 +2,6 @@ app: dms-be-stg
 container:
   image:
     registry: registry.hub.docker.com
-    version: 0ea5ddc4ebc1ee08afd26ba9b1dde5db1ba4dc9c
+    version: 771c32a76621bd6f62ef64ec4ec0c3b4f1899e85
 
 host: stg-api.xquare.app
