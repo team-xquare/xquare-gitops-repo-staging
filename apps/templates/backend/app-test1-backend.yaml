@@ -1,0 +1,38 @@
+app: 
+  fullName: test1-backend-staging
+  name: test1
+  type: backend
+  env: staging
+
+container:
+  port: 8080
+  image:
+    registry: registry.hub.docker.com
+    version: latest
+
+
+host: staging-default.xquare.app
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: test1-backend-staging
+  namespace: argocd
+
+spec:
+  destination:
+    server: {{ .Values.spec.destination.server }} 
+    namespace: test1-backend-staging
+
+  project: {{ .Values.spec.project }}
+
+  source:
+    path: charts/backend/test1
+    repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: {{ .Values.spec.source.targetRevision }}
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
