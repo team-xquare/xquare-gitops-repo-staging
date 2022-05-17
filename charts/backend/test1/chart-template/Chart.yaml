@@ -1,0 +1,9 @@
+apiVersion: v2
+name: test1-backend-staging
+description: A Helm chart for test1 backend
+
+type: application
+
+version: 0.1.0
+
+appVersion: "1.0"
