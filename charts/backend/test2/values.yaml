@@ -1,0 +1,14 @@
+app: 
+  fullName: test2-backend-staging
+  name: test2
+  type: backend
+  env: staging
+
+container:
+  port: 8080
+  image:
+    registry: registry.hub.docker.com
+    version: latest
+
+
+host: staging-default.xquare.app
