@@ -11,4 +11,4 @@ container:
     version: latest
 
 
-host: staging-default.xquare.app
+host: staging-test.xquare.app
