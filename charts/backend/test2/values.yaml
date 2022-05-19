@@ -7,8 +7,8 @@ app:
 container:
   port: 8080
   image:
-    registry: registry.hub.docker.com
+    registry: docker.io
     version: latest
 
 
-host: staging-test.xquare.app
+host: staging-default.xquare.app
