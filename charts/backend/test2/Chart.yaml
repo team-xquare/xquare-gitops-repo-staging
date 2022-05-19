@@ -1,5 +1,5 @@
 apiVersion: v2
-name: test2-backend-staging
+name: test2-backend-productioin
 description: A Helm chart for test2 backend
 
 type: application

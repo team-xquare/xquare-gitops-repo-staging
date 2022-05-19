@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: test2-backend-staging
+  name: test2-backend-productioin
   namespace: argocd
 
 spec:
   destination:
     server: {{ .Values.spec.destination.server }} 
-    namespace: test2-backend-staging
+    namespace: test2-backend-productioin
 
   project: {{ .Values.spec.project }}
 
