@@ -10,5 +10,9 @@ container:
     registry: registry.hub.docker.com
     version: latest
 
+ingress:
+  prefix: /test
+
 
 host: staging-api.xquare.app
+
