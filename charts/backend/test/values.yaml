@@ -11,7 +11,7 @@ container:
     version: latest
 
 ingress:
-  prefix: /test
+  prefix: /
 
 
 host: staging-api.xquare.app

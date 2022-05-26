@@ -1,0 +1,10 @@
+{
+  "Name": "test",
+  "Type": "backend",
+  "Host": "api.xquare.app",
+  "ImageRegistry": "registry.hub.docker.com",
+  "ImageTag": "latest",
+  "Environment": "staging",
+  "ContainerPort": 8080,
+  "Prefix": "/"
+}
