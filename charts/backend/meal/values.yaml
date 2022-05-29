@@ -14,5 +14,5 @@ ingress:
   prefix: /meal
 
 
-host: staging-api-stag.xquare.app
+host: staging-api.xquare.app
 
