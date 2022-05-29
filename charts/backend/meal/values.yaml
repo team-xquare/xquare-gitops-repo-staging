@@ -1,0 +1,18 @@
+app: 
+  fullName: meal-backend-staging
+  name: meal
+  type: backend
+  env: staging
+
+container:
+  port: 3000
+  image:
+    registry: registry.hub.docker.com
+    version: latest
+
+ingress:
+  prefix: /meal
+
+
+host: staging-api-stag.xquare.app
+
