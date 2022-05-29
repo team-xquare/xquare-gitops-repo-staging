@@ -1,0 +1,10 @@
+{
+  "Name": "meal",
+  "Host": "api-stag.xquare.app",
+  "ImageRegistry": "registry.hub.docker.com",
+  "ImageTag": "latest",
+  "ContainerPort": 3000,
+  "Prefix": "/meal",
+  "Environment": "staging",
+  "Type": "backend"
+}
