@@ -1,0 +1,10 @@
+{
+  "Name": "notification",
+  "Host": "api.xquare.app",
+  "ImageRegistry": "registry.hub.docker.com",
+  "ImageTag": "latest",
+  "ContainerPort": 8080,
+  "Prefix": "/notifications",
+  "Environment": "staging",
+  "Type": "backend"
+}

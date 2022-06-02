@@ -1,0 +1,18 @@
+app: 
+  fullName: notification-backend-staging
+  name: notification
+  type: backend
+  env: staging
+
+container:
+  port: 8080
+  image:
+    registry: registry.hub.docker.com
+    version: latest
+
+ingress:
+  prefix: /notifications
+
+
+host: staging-api.xquare.app
+
