@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dms-backend-staging
+  name: dms-backend-prod
   namespace: argocd
 
 spec:
   destination:
     server: {{ .Values.spec.destination.server }} 
-    namespace: dms-backend-staging
+    namespace: dms-backend-prod
 
   project: {{ .Values.spec.project }}
 

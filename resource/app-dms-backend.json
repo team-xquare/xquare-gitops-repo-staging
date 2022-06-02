@@ -2,9 +2,9 @@
   "Name": "dms",
   "Host": "api.xquare.app",
   "ImageRegistry": "registry.hub.docker.com",
-  "ImageTag": "e72a7cf9d4b5edf200aa667acac0cc03edea33c3",
+  "ImageTag": "latest",
   "ContainerPort": 8080,
   "Prefix": "/dms",
-  "Environment": "staging",
+  "Environment": "prod",
   "Type": "backend"
 }

@@ -1,18 +1,18 @@
 app: 
-  fullName: dms-backend-staging
+  fullName: dms-backend-prod
   name: dms
   type: backend
-  env: staging
+  env: prod
 
 container:
   port: 8080
   image:
     registry: registry.hub.docker.com
-    version: e72a7cf9d4b5edf200aa667acac0cc03edea33c3
+    version: latest
 
 ingress:
   prefix: /dms
 
 
-host: staging-api.xquare.app
+host: prod-api.xquare.app
 
