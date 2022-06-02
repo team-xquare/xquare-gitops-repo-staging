@@ -6,8 +6,8 @@ metadata:
 spec:
   virtualhost:
     fqdn: {{ .Values.host }}
-    tls:
-      secretName: {{ .Values.app.fullName }}-certificate
+#     tls:
+#       secretName: {{ .Values.app.fullName }}-certificate
 
   routes:
   - conditions:
