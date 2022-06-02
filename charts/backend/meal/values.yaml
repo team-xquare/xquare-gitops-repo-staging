@@ -8,7 +8,7 @@ container:
   port: 3000
   image:
     registry: registry.hub.docker.com
-    version: 18c150f0156b54e68f7f20fb5791acb21de9ee87
+    version: 7bfb4b09838f09d000cb85e7090ffcca4ba8ad6d
 
 ingress:
   prefix: /meal
