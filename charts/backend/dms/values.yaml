@@ -14,5 +14,5 @@ ingress:
   prefix: /dms
 
 
-host: test.xquare.app
+host: stg-api.xquare.app
 
