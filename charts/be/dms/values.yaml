@@ -1,0 +1,18 @@
+app: 
+  fullName: dms-be-stag
+  name: dms
+  type: be
+  env: stag
+
+container:
+  port: 8080
+  image:
+    registry: registry.hub.docker.com
+    version: efd2c8dc56fa02b70001831b0b792adbf1016bc7
+
+ingress:
+  prefix: /dms
+
+
+host: stag-api.xquare.app
+
