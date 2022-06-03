@@ -14,7 +14,7 @@ spec:
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: xquare-stg
+    namespace: xquare-stag
 
   syncPolicy:
     automated:
