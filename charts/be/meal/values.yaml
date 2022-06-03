@@ -1,0 +1,18 @@
+app: 
+  fullName: meal-be-stag
+  name: meal
+  type: be
+  env: stag
+
+container:
+  port: 8080
+  image:
+    registry: registry.hub.docker.com
+    version: 5030aa662d7e8a528731af6f4119b1ebaa3329b2
+
+ingress:
+  prefix: /meal
+
+
+host: stag-api.xquare.app
+
