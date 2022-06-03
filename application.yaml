@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: xquare-stg
+  name: xquare-stag
   namespace: argocd
 
 spec:
-  project: xquare-stg
+  project: xquare-stag
 
   source:
     repoURL: https://github.com/team-xquare/xquare-gitops-repo-staging.git
