@@ -8,7 +8,7 @@ container:
   port: 8080
   image:
     registry: registry.hub.docker.com
-    version: 38b1d4cc585bf6a5f7e4d028039a8f98511e38e8
+    version: 88c2cffcc3ee108f7058e674ba289c9db6bf9462
 
 ingress:
   prefix: /dms
