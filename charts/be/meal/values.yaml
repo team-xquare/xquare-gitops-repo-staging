@@ -14,5 +14,5 @@ ingress:
   prefix: /meal
 
 
-host: stag-app.xquare.app
+host: stag-api.xquare.app
 
