@@ -4,7 +4,7 @@ metadata:
   name: {{.Values.app.name}}
 spec:
   dnsNames:
-  - *.xquare.app
+  - "*.xquare.app"
   issuerRef:
     name: letsencrypt-{{ .Values.app.env }}
     kind: ClusterIssuer
