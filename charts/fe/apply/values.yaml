@@ -1,0 +1,18 @@
+app: 
+  fullName: apply-fe-stag
+  name: apply
+  type: fe
+  env: stag
+
+container:
+  port: 3000
+  image:
+    registry: registry.hub.docker.com
+    version: 0.0.1
+
+ingress:
+  prefix: /apply
+
+
+host: stag-service.xquare.app
+
