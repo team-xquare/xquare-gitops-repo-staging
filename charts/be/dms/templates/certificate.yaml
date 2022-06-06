@@ -4,7 +4,7 @@ metadata:
   name: {{.Values.app.name}}
 spec:
   dnsNames:
-  - stag-api.xquare.app
+  - "*.xquare.app"
   issuerRef:
     name: letsencrypt-{{ .Values.app.env }}
     kind: ClusterIssuer
