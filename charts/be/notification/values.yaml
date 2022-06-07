@@ -1,4 +1,4 @@
-app: 
+app:
   fullName: notification-be-stag
   name: notification
   type: be
@@ -12,7 +12,3 @@ container:
 
 ingress:
   prefix: /notifications
-
-
-host: stag-api.xquare.app
-

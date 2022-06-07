@@ -1,4 +1,4 @@
-app: 
+app:
   fullName: application-be-stag
   name: application
   type: be
@@ -12,7 +12,3 @@ container:
 
 ingress:
   prefix: /applications
-
-
-host: stag-api.xquare.app
-

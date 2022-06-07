@@ -1,4 +1,4 @@
-app: 
+app:
   fullName: meal-be-stag
   name: meal
   type: be
@@ -12,7 +12,3 @@ container:
 
 ingress:
   prefix: /meal
-
-
-host: stag-app.xquare.app
-
