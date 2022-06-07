@@ -1,3 +1,4 @@
+{{$subdomain := ""}}
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -12,9 +13,9 @@ spec:
   - secretName: {{.Values.app.type}}-{{.Values.app.env}}-cert
     hosts:
     {{if .Values.app.type eq "be"}}
-      {{$subdomain := "api"}}
+      {{$subdomain = "api"}}
     {{else if .Values.app.type eq "fe"}}
-      {{$subdomain := "webview"}}
+      {{$subdomain = "webview"}}
     {{end}}
     {{if .Values.app.env eq "prod"}}
     - {{$subdomain}}.xquare.app
