@@ -1,4 +1,16 @@
 {{$subdomain := ""}}
+{{$host := ""}}
+{{if .Values.app.type eq "be"}}
+  {{$subdomain = "api"}}
+{{else}}
+  {{$subdomain = "webview"}}
+{{end}}
+{{if .Values.app.env ne "prod"}}
+  {{$host = {{.Values.app.env}}-{{$subdomain}}.xquare.app }}
+{{else}}
+  {{$host = {{$subdomain}}.xquare.app}}
+{{end}}
+{{$host = {{.Values.app.env}}-{{$subdomain}}.xquare.app }}
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -12,19 +24,10 @@ spec:
   tls:
   - secretName: {{.Values.app.type}}-{{.Values.app.env}}-cert
     hosts:
-    {{if .Values.app.type eq "be"}}
-      {{$subdomain = "api"}}
-    {{else if .Values.app.type eq "fe"}}
-      {{$subdomain = "webview"}}
-    {{end}}
-    {{if .Values.app.env eq "prod"}}
-    - {{$subdomain}}.xquare.app
-    {{else}}
-    - {{.Values.app.env}}-{{$subdomain}}.xquare.app
-    {{end}}
+    - {{$host}}
 
   rules:
-  - host: {{.Values.app.env}}-api.xquare.app
+  - host: {{$host}}
     http:
       paths:
       - pathType: Prefix
