@@ -1,33 +1,19 @@
-{{$subdomain := ""}}
-{{$host := ""}}
-{{if .Values.app.type eq "be"}}
-  {{$subdomain = "api"}}
-{{else}}
-  {{$subdomain = "webview"}}
-{{end}}
-{{if .Values.app.env ne "prod"}}
-  {{$host = {{.Values.app.env}}-{{$subdomain}}.xquare.app }}
-{{else}}
-  {{$host = {{$subdomain}}.xquare.app}}
-{{end}}
-{{$host = {{.Values.app.env}}-{{$subdomain}}.xquare.app }}
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: {{.Values.app.name}}
   annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-{{.Values.app.env}}
+    cert-manager.io/cluster-issuer: letsencrypt-stag
     ingress.kubernetes.io/force-ssl-redirect: "true"
     kubernetes.io/ingress.class: contour
     kubernetes.io/tls-acme: "true"
 spec:
   tls:
-  - secretName: {{.Values.app.type}}-{{.Values.app.env}}-cert
+  - secretName: be-stag-cert
     hosts:
-    - {{$host}}
-
+    - stag-api.xquare.app
   rules:
-  - host: {{$host}}
+  - host: stag-api.xquare.app
     http:
       paths:
       - pathType: Prefix
