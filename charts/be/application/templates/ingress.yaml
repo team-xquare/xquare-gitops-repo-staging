@@ -3,27 +3,17 @@ kind: Ingress
 metadata:
   name: {{.Values.app.name}}
   annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-{{.Values.app.env}}
+    cert-manager.io/cluster-issuer: letsencrypt-stag
     ingress.kubernetes.io/force-ssl-redirect: "true"
     kubernetes.io/ingress.class: contour
     kubernetes.io/tls-acme: "true"
 spec:
   tls:
-  - secretName: {{.Values.app.type}}-{{.Values.app.env}}-cert
+  - secretName: be-stag-cert
     hosts:
-    {{if .Values.app.type eq "be"}}
-      {{$subdomain := "api"}}
-    {{else if .Values.app.type eq "fe"}}
-      {{$subdomain := "webview"}}
-    {{end}}
-    {{if .Values.app.env eq "prod"}}
-    - {{$subdomain}}.xquare.app
-    {{else}}
     - {{.Values.app.env}}-server.xquare.app
-    {{end}}
-
   rules:
-  - host: {{.Values.app.env}}-api.xquare.app
+  - host: stag-server.xquare.app
     http:
       paths:
       - pathType: Prefix
