@@ -2,7 +2,7 @@
   "Name": "application",
   "Host": "api.xquare.app",
   "ImageRegistry": "registry.hub.docker.com",
-  "ImageTag": "c4979ed09a0009359b046b175fc57349134e85ec",
+  "ImageTag": "50442376af6701977d119254711da2f2ed3c7382",
   "ContainerPort": 8080,
   "Prefix": "/applications",
   "Environment": "stag",
