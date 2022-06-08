@@ -19,7 +19,7 @@ spec:
     {{if .Values.app.env eq "prod"}}
     - {{$subdomain}}.xquare.app
     {{else}}
-    - {{.Values.app.env}}-{{$subdomain}}.xquare.app
+    - {{.Values.app.env}}-server.xquare.app
     {{end}}
 
   rules:
