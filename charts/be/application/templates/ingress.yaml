@@ -11,9 +11,9 @@ spec:
   tls:
   - secretName: be-stag-cert
     hosts:
-    - {{.Values.app.env}}-server.xquare.app
+    - stag-api.xquare.app
   rules:
-  - host: stag-server.xquare.app
+  - host: stag-api.xquare.app
     http:
       paths:
       - pathType: Prefix
