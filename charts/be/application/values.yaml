@@ -8,7 +8,7 @@ container:
   port: 8080
   image:
     registry: registry.hub.docker.com
-    version: ae3cfc62b790c8a338f09fdffc91684377dde4db
+    version: 5f65a3bbde2ae39c6a4944df228d50f01d45ef79
 
 ingress:
   prefix: /applications
