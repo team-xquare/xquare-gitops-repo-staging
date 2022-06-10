@@ -1,0 +1,10 @@
+{
+  "Name": "assets-fe",
+  "Host": "stag-api.assets-fe.xquare.app",
+  "ImageRegistry": "registry.hub.docker.com",
+  "ImageTag": "latest",
+  "ContainerPort": 3000,
+  "Prefix": "/",
+  "Environment": "stag",
+  "Type": "fe"
+}
