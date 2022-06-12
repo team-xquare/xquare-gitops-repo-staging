@@ -1,6 +1,6 @@
 {
   "Name": "application",
-  "Host": "api.xquare.app",
+  "Host": "stag-api.xquare.app",
   "ImageRegistry": "registry.hub.docker.com",
   "ImageTag": "7fe14640edc27b757c915a1a77f1214731d57835",
   "ContainerPort": 8080,

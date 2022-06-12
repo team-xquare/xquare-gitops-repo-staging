@@ -7,11 +7,13 @@ metadata:
     kubernetes.io/ingress.class: contour
 spec:
   tls:
-  - secretName: be-stag-cert
+  - secretName: {{.Values.app.type}}-{{.Values.app.env}}-cert
     hosts:
-    - stag-api.xquare.app
+    - {{.Values.ingress.host}}
+
+
   rules:
-  - host: stag-api.xquare.app
+  - host: {{.Values.ingress.host}}
     http:
       paths:
       - pathType: Prefix
