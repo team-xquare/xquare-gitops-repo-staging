@@ -8,7 +8,7 @@ container:
   port: 8080
   image:
     registry: registry.hub.docker.com
-    version: 56594c8611561e64a6584b15bbe04842e2012dc2
+    version: 6348d67bdbde41d7e1ebbb4d6b5e3d026a340234
 
 ingress:
   prefix: /notifications

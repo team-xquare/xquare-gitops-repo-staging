@@ -1,0 +1,17 @@
+app: 
+  fullName: backoffice-be-stag
+  name: backoffice
+  type: be
+  env: stag
+
+
+container:
+  port: 8080
+  image:
+    registry: registry.hub.docker.com
+    version: ed82c7674c924d437a279653aa9c76dcf7bf43c7
+
+ingress:
+  host: stag-api.xquare.app
+  prefix: /
+  
