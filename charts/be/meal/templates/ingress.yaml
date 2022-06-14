@@ -1,23 +1,20 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
 metadata:
   name: {{.Values.app.name}}
-  annotations:
-    ingress.kubernetes.io/force-ssl-redirect: "true"
-    kubernetes.io/ingress.class: contour
 spec:
-  tls:
-  - secretName: be-stag-cert
-    hosts:
-    - stag-api.xquare.app
-  rules:
-  - host: stag-api.xquare.app
-    http:
-      paths:
-      - pathType: Prefix
-        path: {{.Values.ingress.prefix}}
-        backend:
-          service:
-            name: {{.Values.app.name}}
-            port:
-              number: 80
+  virtualhost:
+    fqdn: stag-api.xquare.app
+    tls:
+      secretName: {{.Values.app.type}}-{{.Values.app.env}}-cert
+    # authorization:
+    #   extensionRef:
+    #     name: authorization
+    #     namespace: authorization
+
+  routes:
+  - conditions:
+    - prefix: {{.Values.ingress.prefix}}
+    services:
+      - name: {{.Values.app.name}}
+        port: 80
