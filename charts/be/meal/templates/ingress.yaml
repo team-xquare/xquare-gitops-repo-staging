@@ -3,6 +3,7 @@ kind: HTTPProxy
 metadata:
   name: {{.Values.app.name}}
 spec:
+  ingressClassName: contour
   routes:
     - conditions:
       - prefix: {{.Values.ingress.prefix}}
