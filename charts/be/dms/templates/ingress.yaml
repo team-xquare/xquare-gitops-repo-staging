@@ -3,6 +3,7 @@ kind: HTTPProxy
 metadata:
   name: {{.Values.app.name}}
 spec:
+  ingressClassName: contour
   virtualhost:
     fqdn: stag-api.xquare.app
     tls:
@@ -13,8 +14,8 @@ spec:
     #     namespace: authorization
 
   routes:
-  - conditions:
-    - prefix: {{.Values.ingress.prefix}}
-    services:
-      - name: {{.Values.app.name}}
-        port: 80
+    - conditions:
+      - prefix: {{.Values.ingress.prefix}}
+      services:
+        - name: {{.Values.app.name}}
+          port: 80
