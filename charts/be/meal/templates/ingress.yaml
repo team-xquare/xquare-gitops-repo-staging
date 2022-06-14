@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: contour
   virtualhost:
-    fqdn: stag-api.xquare.app
+    # fqdn: stag-api.xquare.app
     tls:
       secretName: {{.Values.app.type}}-{{.Values.app.env}}-cert
     # authorization:
