@@ -2,7 +2,7 @@
   "Name": "notification",
   "Host": "api.xquare.app",
   "ImageRegistry": "registry.hub.docker.com",
-  "ImageTag": "7af22faef74dd6369151009e983a847a0a7fbe54",
+  "ImageTag": "47cdda4b3ad31bc08ddd931a67b774337cf1ab3e",
   "ContainerPort": 8080,
   "Prefix": "/notifications",
   "Environment": "stag",
