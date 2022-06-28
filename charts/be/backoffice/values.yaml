@@ -9,7 +9,7 @@ container:
   port: 8080
   image:
     registry: registry.hub.docker.com
-    version: b326659ecabcc7859cedcb8a6b386655e61f4849
+    version: d74927359e973bab3bc1ad26a72daf8f5fc5413e
 
 ingress:
   host: stag-api.xquare.app
