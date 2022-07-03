@@ -1,7 +1,7 @@
 {
   "Name": "dms",
   "Host": "api.xquare.app",
-  "ImageRegistry": "registry.hub.docker.com",
+  "ImageRegistry": "718436679669.dkr.ecr.ap-northeast-2.amazonaws.com",
   "ImageTag": "356e5d88fa25ce906aab0f4b9719ff9b54c328ea",
   "ContainerPort": 8080,
   "Prefix": "/dms",

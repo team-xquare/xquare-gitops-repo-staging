@@ -1,7 +1,7 @@
 {
   "Name": "backoffice",
   "Host": "stag-api.xquare.app",
-  "ImageRegistry": "registry.hub.docker.com",
+  "ImageRegistry": "718436679669.dkr.ecr.ap-northeast-2.amazonaws.com",
   "ImageTag": "d74927359e973bab3bc1ad26a72daf8f5fc5413e",
   "ContainerPort": 8080,
   "Prefix": "/",
