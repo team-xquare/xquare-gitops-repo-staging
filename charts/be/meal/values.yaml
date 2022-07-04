@@ -8,7 +8,7 @@ container:
   port: 3000
   image:
     registry: 718436679669.dkr.ecr.ap-northeast-2.amazonaws.com
-    version: 93d7a9685ac3923808ef05ea85912b5cd3db4c1f
+    version: 5fceea3ef9eb8354d300094498f45444e19094c5
 
 ingress:
   prefix: /meal
