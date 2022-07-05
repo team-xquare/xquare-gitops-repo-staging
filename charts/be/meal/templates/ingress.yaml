@@ -6,7 +6,7 @@ spec:
   ingressClassName: contour
   routes:
     - conditions:
-      - prefix: /hello
+      - prefix: /meal
       services:
         - name: {{.Values.app.name}}
           port: 80
