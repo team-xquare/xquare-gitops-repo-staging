@@ -3,7 +3,15 @@ kind: HTTPProxy
 metadata:
   name: {{.Values.app.name}}
 spec:
-  # ingressClassName: contour
+  ingressClassName: contour
+  virtualhost:
+    fqdn: stag-api.xquare.app
+    tls:
+      secretName: be-stag-cert
+    authorization:
+      extensionRef:
+        name: contour-auth
+        namespace: contour-auth    
   routes:
     - conditions:
       - prefix: /meal
