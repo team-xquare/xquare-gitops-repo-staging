@@ -1,20 +1,37 @@
-apiVersion: projectcontour.io/v1
-kind: HTTPProxy
+# apiVersion: projectcontour.io/v1
+# kind: HTTPProxy
+# metadata:
+#   name: {{.Values.app.name}}
+# spec:
+#   ingressClassName: contour
+#   virtualhost:
+#     fqdn: stag-api.xquare.app
+#     tls:
+#       secretName: be-stag-cert
+#     authorization:
+#       extensionRef:
+#         name: contour-auth
+#         namespace: contour-auth    
+#   routes:
+#     - conditions:
+#       - prefix: /meal
+#       services:
+#         - name: {{.Values.app.name}}
+#           port: 80
+apiVersion: networking.k8s.io/v1
+kind: Ingress
 metadata:
-  name: {{.Values.app.name}}
+  name: meal
 spec:
   ingressClassName: contour
-  virtualhost:
-    fqdn: stag-api.xquare.app
-    tls:
-      secretName: be-stag-cert
-    authorization:
-      extensionRef:
-        name: contour-auth
-        namespace: contour-auth    
-  routes:
-    - conditions:
-      - prefix: /meal
-      services:
-        - name: {{.Values.app.name}}
-          port: 80
+  rules:
+  - host: stag-api.xquare.app
+    http:
+      paths:
+      - backend:
+          service:
+            name: meal
+            port:
+              number: 80
+        pathType: Prefix
+        path: /meal
