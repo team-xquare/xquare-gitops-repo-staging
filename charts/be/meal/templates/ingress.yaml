@@ -4,17 +4,9 @@ metadata:
   name: {{.Values.app.name}}
 spec:
   ingressClassName: contour
-  virtualhost:
-    fqdn: stag-api.xquare.app
-    tls:
-      secretName: be-stag-cert
-    authorization:
-      extensionRef:
-        name: contour-auth
-        namespace: contour-auth    
   routes:
     - conditions:
-      - prefix: /meal
+      - prefix: {{.Values.ingress.prefix}}
       services:
         - name: {{.Values.app.name}}
           port: 80
