@@ -2,7 +2,7 @@
   "Name": "notification",
   "Host": "api.xquare.app",
   "ImageRegistry": "718436679669.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "ef316c688677d379382c76657041a82061ba3a8c",
+  "ImageTag": "86aec2e9ebb3ce491b7f33f18689e101acf849fe",
   "ContainerPort": 8080,
   "Prefix": "/notifications",
   "Environment": "stag",
