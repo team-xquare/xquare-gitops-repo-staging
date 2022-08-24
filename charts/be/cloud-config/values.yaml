@@ -1,0 +1,17 @@
+app: 
+  fullName: cloud-config-be-stag
+  name: cloud-config
+  type: be
+  env: stag
+
+
+container:
+  port: 8080
+  image:
+    registry: 718436679669.dkr.ecr.ap-northeast-2.amazonaws.com
+    version: latest
+
+ingress:
+  host: stag-cloud-config.stag-api.xquare.app
+  prefix: /
+  
