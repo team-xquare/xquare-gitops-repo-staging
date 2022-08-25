@@ -8,7 +8,7 @@ container:
   port: 8080
   image:
     registry: 718436679669.dkr.ecr.ap-northeast-2.amazonaws.com
-    version: a382fd6c039f7ca9cb089ea1d5e168344b281290
+    version: 50fc2a4b1fc81f985697fc37ea613cf4cb4c1adf
 
 ingress:
   prefix: /notifications
