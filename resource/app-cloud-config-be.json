@@ -2,7 +2,7 @@
   "Name": "cloud-config",
   "Host": "stag-api.xquare.app",
   "ImageRegistry": "718436679669.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "bd38aa6beea9606b58bafb8f07935c76c85f408b",
+  "ImageTag": "b36d97d5a8325eddff86dfd44d835d32635c36f1",
   "ContainerPort": 8080,
   "Prefix": "/cloud-config",
   "Environment": "stag",
