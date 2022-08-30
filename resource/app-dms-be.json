@@ -1,6 +1,6 @@
 {
   "Name": "dms",
-  "Host": "api.xquare.app",
+  "Host": "stag-api.xquare.app",
   "ImageRegistry": "718436679669.dkr.ecr.ap-northeast-2.amazonaws.com",
   "ImageTag": "f8df9c01998eed59d06eed666d761a0a026f17a8",
   "ContainerPort": 8080,

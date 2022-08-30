@@ -1,10 +1,10 @@
 {
-  "Name": "meal",
-  "Host": "app.xquare.app",
+  "Name": "meals",
+  "Host": "stag-api.xquare.app",
   "ImageRegistry": "718436679669.dkr.ecr.ap-northeast-2.amazonaws.com",
   "ImageTag": "f9d56bfcac418f933057ab07e0e597f212875c1b",
   "ContainerPort": 3000,
-  "Prefix": "/meal",
+  "Prefix": "/meals",
   "Environment": "stag",
   "Type": "be"
 }

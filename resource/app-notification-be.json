@@ -1,6 +1,6 @@
 {
   "Name": "notification",
-  "Host": "api.xquare.app",
+  "Host": "stag-api.xquare.app",
   "ImageRegistry": "718436679669.dkr.ecr.ap-northeast-2.amazonaws.com",
   "ImageTag": "d475d0c340dbd1af679164b4359ac0eb366c3f0d",
   "ContainerPort": 8080,
