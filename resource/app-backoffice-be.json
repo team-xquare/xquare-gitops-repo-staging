@@ -2,7 +2,7 @@
   "Name": "backoffice",
   "Host": "stag-api.xquare.app",
   "ImageRegistry": "718436679669.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "ad3e3ddcef817d5323a88ee0ac4560c2c5261d29",
+  "ImageTag": "31c046f4f168eea26c21f35769141b8bf8c3bf7f",
   "ContainerPort": 8080,
   "Prefix": "/",
   "Environment": "stag",
