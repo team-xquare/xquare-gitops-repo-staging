@@ -1,10 +1,10 @@
 {
-  "Name": "notification",
+  "Name": "user",
   "Host": "stag-api.xquare.app",
   "ImageRegistry": "718436679669.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "d475d0c340dbd1af679164b4359ac0eb366c3f0d",
+  "ImageTag": "1c32af001e53f077e3ed92cdb0281dc757dc64e4",
   "ContainerPort": 8080,
-  "Prefix": "/notifications",
+  "Prefix": "/users",
   "Environment": "stag",
   "Type": "be"
 }

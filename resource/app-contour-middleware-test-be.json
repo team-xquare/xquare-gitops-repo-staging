@@ -1,10 +1,10 @@
 {
-  "Name": "backoffice",
+  "Name": "contour-middleware-test",
   "Host": "stag-api.xquare.app",
   "ImageRegistry": "718436679669.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "cace07103e3b931878da9b3bab79e6bb60b8691e",
+  "ImageTag": "4bcbf616dca4e3e6333ab776a6cb61e3b760fabd",
   "ContainerPort": 8080,
-  "Prefix": "/",
+  "Prefix": "/contour-middleware-test",
   "Environment": "stag",
   "Type": "be"
 }

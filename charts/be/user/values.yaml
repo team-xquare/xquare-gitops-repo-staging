@@ -1,15 +1,17 @@
-app:
-  fullName: meal-be-stag
-  name: meal
+app: 
+  fullName: user-be-stag
+  name: user
   type: be
   env: stag
 
+
 container:
-  port: 3000
+  port: 8080
   image:
     registry: 718436679669.dkr.ecr.ap-northeast-2.amazonaws.com
-    version: 9ee57060a8824ab9fcfd503e2c792a0d7b582480
+    version: 1c32af001e53f077e3ed92cdb0281dc757dc64e4
 
 ingress:
   host: stag-api.xquare.app
-  prefix: /meal
+  prefix: /users
+  
