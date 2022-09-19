@@ -12,4 +12,4 @@ container:
 
 ingress:
   prefix: /dms
-  host: api.xquare.app
+  host: stag-api.xquare.app
