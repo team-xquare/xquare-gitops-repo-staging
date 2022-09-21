@@ -1,0 +1,17 @@
+app: 
+  fullName: authority-be-stag
+  name: authority
+  type: be
+  env: stag
+
+
+container:
+  port: 8080
+  image:
+    registry: 718436679669.dkr.ecr.ap-northeast-2.amazonaws.com
+    version: v0.0.7
+
+ingress:
+  host: stag-api.xquare.app
+  prefix: /authorities
+  
