@@ -1,5 +1,5 @@
 app:
-  fullName: contour-middleware-be-prod
+  fullName: contour-middleware-be-stag
   name: contour-middleware
   type: be
   env: stag
