@@ -1,15 +1,17 @@
-app:
-  fullName: backoffice-be-stag
-  name: backoffice
+app: 
+  fullName: point-be-stag
+  name: point
   type: be
   env: stag
+
 
 container:
   port: 8080
   image:
     registry: 718436679669.dkr.ecr.ap-northeast-2.amazonaws.com
-    version: 586805f6ae5dbd2c9760c8b99b36b56fb876dab3
+    version: latest
 
 ingress:
   host: stag-api.xquare.app
-  prefix: /back-office
+  prefix: /points
+  
