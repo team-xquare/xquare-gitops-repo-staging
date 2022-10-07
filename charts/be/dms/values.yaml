@@ -8,7 +8,7 @@ container:
   port: 8080
   image:
     registry: 718436679669.dkr.ecr.ap-northeast-2.amazonaws.com
-    version: f8df9c01998eed59d06eed666d761a0a026f17a8
+    version: 8db73d2472e65c4371f5ec9974da52b62d573341
 
 ingress:
   prefix: /dms
