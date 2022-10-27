@@ -2,7 +2,7 @@
   "Name": "contour-middleware",
   "Host": "",
   "ImageRegistry": "718436679669.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "b014c2282c7bf672bc6bd59d575b1b70d2035b21",
+  "ImageTag": "6a9f02484f57fefca3046bfbbd70eba5b2e09846",
   "ContainerPort": 9443,
   "Prefix": "",
   "Environment": "stag",
