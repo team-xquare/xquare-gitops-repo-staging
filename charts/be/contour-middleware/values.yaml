@@ -8,4 +8,4 @@ container:
   port: 9443
   image:
     registry: 718436679669.dkr.ecr.ap-northeast-2.amazonaws.com
-    version: 309940e566ceb1b79296c85f0d38d9e1e0e0d729
+    version: 490eafc44890bfd8457b9da465101ffb9239cb5d
