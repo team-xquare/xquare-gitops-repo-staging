@@ -2,7 +2,7 @@
   "Name": "dms",
   "Host": "stag-api.xquare.app",
   "ImageRegistry": "718436679669.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "8db73d2472e65c4371f5ec9974da52b62d573341",
+  "ImageTag": "40ff6292d236313004c19a0b00a70430c1acaea8",
   "ContainerPort": 8080,
   "Prefix": "/dms",
   "Environment": "stag",
