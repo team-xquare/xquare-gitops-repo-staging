@@ -1,6 +1,6 @@
 apiVersion: v2
 name: attachment-be-stag
-description: A Helm chart for application be
+description: A Helm chart for attachment be
 
 type: application
 
