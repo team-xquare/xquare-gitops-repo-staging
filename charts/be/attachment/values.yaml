@@ -1,0 +1,15 @@
+app:
+  fullName: attachment-be-stag
+  name: attachment
+  type: be
+  env: stag
+
+container:
+  port: 8080
+  image:
+    registry: 718436679669.dkr.ecr.ap-northeast-2.amazonaws.com
+    version: latest #TODO 나중에 바꾸세요
+
+ingress:
+  host: stag-api.xquare.app
+  prefix: /attachment
