@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: attachment-be-stag
+  name: feed-be-stag
   namespace: argocd
 
 spec:
