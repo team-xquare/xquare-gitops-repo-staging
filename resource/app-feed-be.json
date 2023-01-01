@@ -2,7 +2,7 @@
   "Name": "feed",
   "Host": "stag-api.xquare.app",
   "ImageRegistry": "718436679669.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "230f87ec4d772793b788f8625f681bc30b21c83f",
+  "ImageTag": "d71aa8ce8a0d0c36bb4e2d2f6b0d93a08afebc3e",
   "ContainerPort": 8080,
   "Prefix": "/feeds",
   "Environment": "stag",
