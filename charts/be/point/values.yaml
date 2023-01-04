@@ -6,7 +6,7 @@ app:
 
 
 container:
-  port: 3000
+  port: 8080
   image:
     registry: 067347400935.dkr.ecr.ap-northeast-2.amazonaws.com
     version: 2f390fa7be0a73a3c18853fc02eaf59ace0fb4dc
