@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: user-be-stag
+  name: pick-be-stag
   namespace: argocd
 
 spec:
