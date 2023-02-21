@@ -1,0 +1,9 @@
+apiVersion: v2
+name: schedule-be-stag
+description: A Helm chart for schedule be
+
+type: application
+
+version: 0.1.0
+
+appVersion: "1.0"

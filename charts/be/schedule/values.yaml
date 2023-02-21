@@ -1,0 +1,15 @@
+app: 
+  fullName: schedule-be-stag
+  name: schedule
+  type: be
+  env: stag
+
+container:
+  port: 8080
+  image:
+    registry: 067347400935.dkr.ecr.ap-northeast-2.amazonaws.com
+    version:
+
+ingress:
+  host: stag-api.xquare.app
+  prefix: /schedules
