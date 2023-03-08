@@ -2,7 +2,7 @@
     "Name": "attachment",
     "Host": "stag-api.xquare.app",
     "ImageRegistry": "067347400935.dkr.ecr.ap-northeast-2.amazonaws.com",
-    "ImageTag": "4c1880a0513dbdbb2315b568e0309a7f68c42c82",
+    "ImageTag": "e34013600eb7d565104a75ae4bd240ee4ea033ca",
     "ContainerPort": 8080,
     "Prefix": "/attachment",
     "Environment": "stag",
