@@ -2,7 +2,7 @@
   "Name": "contour-middleware-test",
   "Host": "stag-api.xquare.app",
   "ImageRegistry": "067347400935.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "2ff0d404f761365c7e935ee6f88ad41b4595afb2",
+  "ImageTag": "6dbf0806d35e71447e01785d30332ac5a41df1ba",
   "ContainerPort": 8080,
   "Prefix": "/contour-middleware-test",
   "Environment": "stag",
