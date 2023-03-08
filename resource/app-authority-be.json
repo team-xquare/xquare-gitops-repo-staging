@@ -2,7 +2,7 @@
   "Name": "authority",
   "Host": "stag-api.xquare.app",
   "ImageRegistry": "067347400935.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "702591aa4f25b06331b4004964c95144dbc2cb3d",
+  "ImageTag": "e25b979621ee690e7e1d1509e68ca2c6a470e907",
   "ContainerPort": 8080,
   "Prefix": "/authorities",
   "Environment": "stag",
