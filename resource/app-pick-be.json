@@ -2,7 +2,7 @@
     "Name": "pick",
     "Host": "stag-api.xquare.app",
     "ImageRegistry": "067347400935.dkr.ecr.ap-northeast-2.amazonaws.com",
-    "ImageTag": "145d74f08c30697e96714405ce0a3dedd1e5df66",
+    "ImageTag": "08ac99fc946e924e8f405240823e21780f3d516a",
     "ContainerPort": 8080,
     "Prefix": "/pick",
     "Environment": "stag",
