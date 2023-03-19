@@ -2,7 +2,7 @@
   "Name": "point",
   "Host": "stag-api.xquare.app",
   "ImageRegistry": "067347400935.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "3f01ffabaa38f186dc2574bc7e4183d8a2fe7a5f",
+  "ImageTag": "ee7acc04e391b65003c506610d5aa58f2ef64795",
   "ContainerPort": 8080,
   "Prefix": "/points",
   "Environment": "stag",
