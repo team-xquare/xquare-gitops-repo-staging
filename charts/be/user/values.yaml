@@ -9,7 +9,7 @@ container:
   port: 8080
   image:
     registry: 067347400935.dkr.ecr.ap-northeast-2.amazonaws.com
-    version: deffa53347dc1a068605ffad17429ff32f6426c9
+    version: ffdd305786dfe103c17b85312d5c9ee389639ace
 
 ingress:
   host: stag-api.xquare.app
