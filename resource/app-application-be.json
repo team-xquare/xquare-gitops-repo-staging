@@ -2,7 +2,7 @@
   "Name": "application",
   "Host": "stag-api.xquare.app",
   "ImageRegistry": "067347400935.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "d830560c8324924ee391df21f8792fb755dc3bf3",
+  "ImageTag": "8c58f28bd47f95a96b6cd6cefea3da576839c470",
   "ContainerPort": 8080,
   "Prefix": "/applications",
   "Environment": "stag",
