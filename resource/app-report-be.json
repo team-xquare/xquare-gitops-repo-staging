@@ -2,7 +2,7 @@
   "Name": "report",
   "Host": "stag-api.xquare.app",
   "ImageRegistry": "067347400935.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "",
+  "ImageTag": "0d84058b5a3b32b5179a827f3059424abefdca59",
   "ContainerPort": 8080,
   "Prefix": "/reports",
   "Environment": "stag",
