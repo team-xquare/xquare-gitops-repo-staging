@@ -2,7 +2,7 @@
   "Name": "timetable",
   "Host": "stag-api.xquare.app",
   "ImageRegistry": "067347400935.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "cfb8ce98edc5bc2d2f641e5e8a8dedcb1bb4508e",
+  "ImageTag": "7739535d02f75f39bd59c7e84ea2f92637c519da",
   "ContainerPort": 8080,
   "Prefix": "/timetables",
   "Environment": "stag",
