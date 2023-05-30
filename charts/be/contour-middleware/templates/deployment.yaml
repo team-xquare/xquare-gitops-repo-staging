@@ -29,3 +29,5 @@ spec:
         - name: tls
           secret:
             secretName: contour-middleware-cert
+      imagePullSecrets:
+        - name: regcred
