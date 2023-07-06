@@ -2,7 +2,7 @@
   "Name": "meal",
   "Host": "stag-api.xquare.app",
   "ImageRegistry": "067347400935.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "a688eb4a35e636362a9e1b8835205acf16de2c04",
+  "ImageTag": "efe129a44e7ec1907f991519eae3c54a65eac44e",
   "ContainerPort": 3000,
   "Prefix": "/meals",
   "Environment": "stag",
