@@ -2,7 +2,7 @@
   "Name": "schedule",
   "Host": "stag-api.xquare.app",
   "ImageRegistry": "067347400935.dkr.ecr.ap-northeast-2.amazonaws.com",
-  "ImageTag": "80a8cc764eba598647729a5a8e85ff3154a84d18",
+  "ImageTag": "63d78902f158cdd77008b5f253b9dca49f0ed521",
   "ContainerPort": 8080,
   "Prefix": "/schedules",
   "Environment": "stag",
